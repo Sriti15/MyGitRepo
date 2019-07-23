@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Session Test Automation Suite]">
+  <test name="Different testng Feature Test">
+    <classes>
+      <class name="com.Tests.ExceptionTimeOutTest"/>
+      <class name="com.Tests.GoogleTest"/>
+      <class name="com.Tests.GoogleTitleTest"/>
+      <class name="com.Tests.inovocationCount"/>
+      <class name="com.Tests.TestNG_Basic"/>
+    </classes>
+  </test> <!-- Different testng Feature Test -->
+  <test name="Different testng Feature Test(failed)">
+    <classes>
+      <class name="com.Tests.GoogleTest">
+        <methods>
+          <include name="setup"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- com.Tests.GoogleTest -->
+      <class name="com.Tests.TestNG_Basic">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="login"/>
+          <include name="generateTestReport"/>
+          <include name="enterurl"/>
+          <include name="setup"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="DeleteAllCookies"/>
+        </methods>
+      </class> <!-- com.Tests.TestNG_Basic -->
+      <class name="com.Tests.GoogleTitleTest">
+        <methods>
+          <include name="setup"/>
+          <include name="googleTest"/>
+          <include name="CloseBrowser"/>
+          <include name="googleLogoTest"/>
+        </methods>
+      </class> <!-- com.Tests.GoogleTitleTest -->
+    </classes>
+  </test> <!-- Different testng Feature Test(failed) -->
+</suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->
